@@ -1,0 +1,49 @@
+
+.primary-button {
+    position: relative;
+    border: 2px solid #ffffff;
+    border-radius: 500px;
+    width: 250px;
+    height: 48px;
+    overflow: hidden;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+}
+
+.primary-button:hover {
+    cursor: pointer;
+    border: 2px solid #0197f6;
+}
+
+.primary-button .round {
+    border-radius: 50%;
+    background-color: #0197f6;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    z-index: -1;
+    animation: scale-down 0.2s forwards;
+}
+
+.primary-button.animate .round {
+    animation: scale-up 0.5s forwards;
+}
+
+@keyframes scale-up {
+    to {
+        transform: scale(600);
+    }
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(600);
+    }
+    to {
+        ransform: scale(0);
+    }
+}
