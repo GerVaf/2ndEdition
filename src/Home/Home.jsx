@@ -257,12 +257,12 @@ const Home = ({ scrollToSection, setActiveSection }) => {
                 />
               </div>
             </Atropos>
-            <div className="flex">
-              <div className="h-[105px] rounded-lg  sm:h-[250px] w-2 border-opacity-20 border border-orange-500 relative  overflow-hidden">
+            <div className="flex gap-5">
+              <div className="h-[105px] rounded-lg  sm:h-[250px] w-2 border-opacity-20 border border-white relative  overflow-hidden">
                 <motion.div
                   initial={{ y: 0 }}
                   animate={{ y: 105 }}
-                  className="bg-red-600 sm:h-[250px] h-[100px] w-[100%]"
+                  className="bg-white sm:h-[250px] h-[100px] w-[100%]"
                   transition={{
                     duration: 5,
                     repeat: Infinity,
@@ -270,7 +270,7 @@ const Home = ({ scrollToSection, setActiveSection }) => {
                   }}
                 ></motion.div>
               </div>
-              <div className=" main-text-color text-[10px] font-bold ">
+              <div className=" text-white text-[10px] font-bold ">
                 {textGroups.map((text, index) => (
                   <motion.div
                     key={index}

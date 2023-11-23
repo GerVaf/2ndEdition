@@ -50,14 +50,14 @@ const About = () => {
           <div className="sm:flex flex flex-col sm:flex-row sm:flex-wrap">
             {Data.map((card) => {
               return (
-                <div key={card.id} className="sm:w-2/6 p-5">
+                <div key={card.id} className="sm:w-2/6 py-5 sm:px-5">
                   <div className="bg-white text-black/40 hover:text-red-600/80 rounded-md hover:bg-zinc-200 transition duration-150 p-5">
                     <h4>{card.date}Present</h4>
                     <div className=" p-3">
                       <h2 className="font-bold text-xl mb-2 main-text-color">
                         {card.title}
                       </h2>
-                      <p>{card.cate}</p>
+                      <p className="text-[13px] sm:text-base">{card.cate}</p>
                     </div>
                   </div>
                 </div>

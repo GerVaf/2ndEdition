@@ -53,7 +53,8 @@ const Contact = () => {
 
       {/* cate and inputfield  */}
       <div className="p-5 sm:flex  mb-10">
-        <div className="sm:w-3/5 mb-5">
+        {/* cate  */}
+        <div className="sm:w-3/5 mb-5 p-5">
           <p>
             Thank you for watching. I am excited about the opportunity to work
             with you and help bring your vision to life. As a web developer with
@@ -86,7 +87,7 @@ const Contact = () => {
 
         {/* input field  */}
         <form
-          className="sm:w-2/5 flex flex-col justify-center items-center gap-5"
+          className="sm:w-2/5 w-full  flex flex-col justify-center items-center gap-5"
           ref={formRef}
           onSubmit={sendEmail}
         >
@@ -96,8 +97,11 @@ const Contact = () => {
             </p>
             <hr className="border-[rgb(224,36,36)] border sm:border-2 w-36 " />
           </div>
-          <div className="flex flex-col gap-3 text-black">
-            <label className="text-white" htmlFor="email">Your Email*</label>
+
+          <div className="flex flex-col gap-3 text-black w-full ">
+            <label className="text-white" htmlFor="email">
+              Your Email*
+            </label>
             <input
               type="text"
               className="rounded-sm p-2 px-5 outline-none border-none"
@@ -105,7 +109,9 @@ const Contact = () => {
               name="from_name"
               required
             />
-            <label className="text-white" htmlFor="about">Message*</label>
+            <label className="text-white" htmlFor="about">
+              Message*
+            </label>
             <textarea
               name="message"
               className="rounded-sm p-2 px-5 outline-none border-none"

@@ -47,110 +47,109 @@ const Whole = () => {
   const [show, setShow] = useState(true);
   return (
     <>
-      <div className="sm:flex sm:h-[100vh] relative">
-        {/* for mobile menu  */}
+      {/* for mobile menu  */}
+      <div
+        className={`flex flex-col sm:flex-row gap-2 fixed ${
+          show
+            ? "translate-y-[610px] sm:translate-y-[50px] sm:translate-x-[550px]"
+            : "translate-y-[440px] sm:translate-y-[50px] sm:translate-x-[0px]"
+        } z-50 right-5 items-center trnasition duration-300`}
+      >
         <div
-          className={`sm:hidden flex flex-col gap-2 fixed ${
-            show ? "translate-y-[610px]" : "translate-y-[440px]"
-          } z-50 right-5 items-center trnasition duration-300`}
+          className={`w-7 h-7 bg-red-600 ${
+            show ? " mr-0 sm:mr-32 mb-32 sm:mb-0" : "sm:mr-0 mb-0"
+          }    flex text-white items-center justify-center rounded-md`}
         >
           <IoIosArrowUp
             onClick={() => setShow(!show)}
             className={`${
-              show ? " mb-32" : "rotate-180 mb-0"
-            } text-lg bg-red-600 transition duration-300 text-white w-11 rounded-md`}
+              show ? " sm:-rotate-90" : "sm:rotate-90 rotate-180 "
+            } text-lg transition duration-300  w-11  rounded-md`}
           />
-          <div
-            onClick={() => {
-              setShow(!show), scrollToSection("home"), setActiveSection("home");
-            }}
-            className={
-              `${show?'hidden':''} active font-bold py-2 rounded-lg flex justify-center w-20 text-[10px] text-white transition duration-300`
-            }
-          >
-            Home
-          </div>
-          <div
-            onClick={() => {
-              setShow(!show),
-                scrollToSection("experience"),
-                setActiveSection("experience");
-            }}
-            className={
-              `${show?'hidden':''} active font-bold py-2 rounded-lg flex justify-center w-20 text-[10px] text-white transition duration-300`
-            }
-          >
-            About
-          </div>
-          <div
-            onClick={() => {
-              setShow(!show),
-                scrollToSection("projects"),
-                setActiveSection("projects");
-            }}
-            className={
-              `${show?'hidden':''} active font-bold py-2 rounded-lg flex justify-center w-20 text-[10px] text-white transition duration-300`
-            }
-          >
-            Projects
-          </div>
-          <div
-            onClick={() => {
-              setShow(!show),
-                scrollToSection("knowlage"),
-                setActiveSection("knowlage");
-            }}
-            className={
-              `${show?'hidden':''} active font-bold py-2 rounded-lg flex justify-center w-20 text-[10px] text-white transition duration-300`
-            }
-          >
-            Knowledge
-          </div>
-          <div
-            onClick={() => {
-              setShow(!show),
-                scrollToSection("connect"),
-                setActiveSection("connect");
-            }}
-            className={
-              `${show?'hidden':''} active font-bold py-2 rounded-lg flex justify-center w-20 text-[10px] text-white transition duration-300`
-            }
-          >
-            Contact
-          </div>
         </div>
-        {/* for desktop menu  */}
-        {/* <div className="sm:w-3/12 hidden sm:block">
-          <SlideMenu
-            setActiveSection={setActiveSection}
-            scrollToSection={scrollToSection}
-            activeSection={activeSection}
-          />
-        </div> */}
-        
-        <div className="sm:w-full overflow-y-scroll scrollbar-thin scrollbar-thumb-red-600">
-          <div className="" id="home">
-            <Home
-              setActiveSection={setActiveSection}
-              scrollToSection={scrollToSection}
-            />
-          </div>
-          <div id="experience">
-            <About />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-          <div id="knowlage">
-            <Testimonial />
-          </div>
-          <div id="connect">
-            <Contact />
-          </div>
+        <div
+          onClick={() => {
+            setShow(!show), scrollToSection("home"), setActiveSection("home");
+          }}
+          className={`${
+            show ? "hidden" : ""
+          } active font-bold py-2 rounded-lg flex justify-center w-20 text-[8px] text-white transition duration-300`}
+        >
+          Home
+        </div>
+        <div
+          onClick={() => {
+            setShow(!show),
+              scrollToSection("experience"),
+              setActiveSection("experience");
+          }}
+          className={`${
+            show ? "hidden" : ""
+          } active font-bold py-2 rounded-lg flex justify-center w-20 text-[8px] text-white transition duration-300`}
+        >
+          About
+        </div>
+        <div
+          onClick={() => {
+            setShow(!show),
+              scrollToSection("projects"),
+              setActiveSection("projects");
+          }}
+          className={`${
+            show ? "hidden" : ""
+          } active font-bold py-2 rounded-lg flex justify-center w-20 text-[8px] text-white transition duration-300`}
+        >
+          Projects
+        </div>
+        <div
+          onClick={() => {
+            setShow(!show),
+              scrollToSection("knowlage"),
+              setActiveSection("knowlage");
+          }}
+          className={`${
+            show ? "hidden" : ""
+          } active font-bold py-2 rounded-lg flex justify-center w-20 text-[8px] text-white transition duration-300`}
+        >
+          Knowledge
+        </div>
+        <div
+          onClick={() => {
+            setShow(!show),
+              scrollToSection("connect"),
+              setActiveSection("connect");
+          }}
+          className={`${
+            show ? "hidden" : ""
+          } active font-bold py-2 rounded-lg flex justify-center w-20 text-[8px] text-white transition duration-300`}
+        >
+          Contact
         </div>
       </div>
-      <div className="block sm:hidden">
-        <Footer />
+
+      {/* inner data  */}
+      <div className="sm:w-full h-[100vh] overflow-x-hidden overflow-y-scroll scrollbar-thin scrollbar-thumb-red-600">
+        <div className="" id="home">
+          <Home
+            setActiveSection={setActiveSection}
+            scrollToSection={scrollToSection}
+          />
+        </div>
+        <div id="experience">
+          <About />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
+        <div id="knowlage">
+          <Testimonial />
+        </div>
+        <div id="connect">
+          <Contact />
+        </div>
+        <div>
+          <Footer />
+        </div>
       </div>
     </>
   );
