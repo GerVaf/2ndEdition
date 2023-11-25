@@ -6,7 +6,7 @@ import ScrollTrigger from "react-scroll-trigger";
 import CustomizeButton from "../Head&Footer/CustomizeButton";
 import PolarAreaChart from "../components/Chart";
 import Atropos from "atropos/react";
-import profile from "../assets/img/contact.png";
+import profile from "../assets/img/profile.jpg";
 import figma from "../assets/img/attachments/figma.svg";
 import github from "../assets/img/attachments/github.svg";
 import tailwind from "../assets/img/attachments/tailwind.svg";
