@@ -136,7 +136,7 @@ export const ProjectsDisplay = [
     id: 3,
     title: "Clothing Site",
     img: image3,
-    link: "https://order-project-8s69qv41b-gervaf.vercel.app/",
+    link: "https://order-project-lyart.vercel.app/",
     language: [
       {
         title: "react",
