@@ -43,6 +43,7 @@ const Projects = () => {
                     <AiFillGithub />
                   </a>
                   <a
+                    target="blank"
                     href={pj.link}
                     className="flex justify-center w-1/4 bg-gradient-to-r from-gray-200 to-gray-100  rounded-md text-gray-400 hover:from-[rgb(224,36,36)] hover:to-[rgb(193,36,36)] transition duration-200 hover:text-white p-2  "
                   >
