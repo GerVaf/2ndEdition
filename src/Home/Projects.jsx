@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectsDisplay } from "../assets/ProjectData";
 import { AiFillGithub } from "../../node_modules/react-icons/ai";
 import { BiLink } from "../../node_modules/react-icons/bi";
+import { PiCursorClickLight } from "../../node_modules/react-icons/pi";
 const Projects = () => {
   return (
     <>
@@ -26,14 +27,23 @@ const Projects = () => {
               </div>
               {/* Detail for project  */}
               <div className=" sm:w-7/12 flex flex-col justify-around sm:gap-10 p-5">
-                <h2 className="card-title font-bold sm:text-2xl text-white border-b-2 w-8/12 pb-2">
-                  {pj.title}
+                <h2 className="card-title font-bold sm:text-2xl text-white w-full justify-around pb-2">
+                  <p className="border-b-2 ">{pj.title}</p>
+                  {/* on site link  */}
+                  <p className="text-base text-red-500 flex items-center">
+                    {pj.site_link && (
+                      <>
+                        ( <a className="text-white" href={pj?.site_link}>On site link</a>
+                        <PiCursorClickLight className="text-white" /> )
+                      </>
+                    )}
+                  </p>
                 </h2>
 
                 {/* include */}
                 <div className=" flex flex-wrap justify-around h-[50%] overflow-visible gap-2 items-center  font-bold  text-white  mb-3">
                   {pj.language.map((lang) => {
-                    return <p>{lang?.title}</p>;
+                    return <p key={lang}>{lang}</p>;
                   })}
                 </div>
                 <hr className="block sm:hidden" />

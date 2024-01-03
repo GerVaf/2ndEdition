@@ -51,7 +51,7 @@ const Home = ({ scrollToSection, setActiveSection }) => {
               I'm react based front end webveloper with
               <span className="main-text-color font-bold">
                 {" "}
-                over 1 year{" "}
+                over 2 year{" "}
               </span>{" "}
               of experince
             </p>

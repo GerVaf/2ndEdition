@@ -5,6 +5,7 @@ import image5 from "./img/gameplatform.png";
 import image6 from "./img/companyPortfolio.png";
 import image7 from "./img/artist_portfolio.png";
 import image8 from "./img/Opaque_portfolio.png";
+import image9 from "./img/blue_ocean.png";
 
 import image3 from "./img/shopping.png";
 export const ProjectsDisplay = [
@@ -14,24 +15,12 @@ export const ProjectsDisplay = [
     img: image8,
     link: "https://com-portfolio-oe8b.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "tailwind",
-      },
-      {
-        title: "framer-motion",
-      },
-      {
-        title: "lenis",
-      },
-      {
-        title: "react-icons",
-      },
-      {
-        title: "react-router-dom",
-      },
+      "react",
+      "tailwind",
+      "framer-motion",
+      "lenis",
+      "react-icons",
+      "react-router-dom",
     ],
   },
   ,
@@ -41,24 +30,12 @@ export const ProjectsDisplay = [
     img: image7,
     link: "https://opaque-six.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "tailwind",
-      },
-      {
-        title: "framer-motion",
-      },
-      {
-        title: "react-dom",
-      },
-      {
-        title: "react-icons",
-      },
-      {
-        title: "react-router-dom",
-      },
+      "react",
+      "tailwind",
+      "framer-motion",
+      "react-dom",
+      "react-icons",
+      "react-router-dom",
     ],
   },
   ,
@@ -68,68 +45,50 @@ export const ProjectsDisplay = [
     img: image6,
     link: "https://company-portfolio-pied.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "tailwind",
-      },
-      {
-        title: "framer-motion",
-      },
-      {
-        title: "react-dom",
-      },
-      {
-        title: "react-icons",
-      },
-      {
-        title: "react-router-dom",
-      },
-      {
-        title: "react-typical",
-      },
-      {
-        title: "typewriter-effect",
-      },
+      "react",
+      "tailwind",
+      "framer-motion",
+      "react-dom",
+      "react-icons",
+      "react-router-dom",
+      "react-typical",
+      "typewriter-effect",
     ],
   },
+  {
+    id: 9,
+    title: "Blue Ocean Movie Service",
+    img: image9,
+    link: "https://oceann.vercel.app/",
+    site_link: "https://blueoceanshop.org/",
+    language: [
+      "react",
+      "tailwind",
+      "framer-motion",
+      "react-dom",
+      "react-icons",
+      "react-router-dom",
+      "react-typical",
+      "typewriter-effect",
+    ],
+  },
+
   {
     id: 5,
     title: "GamePlatform",
     img: image5,
     link: "https://game-platform-tawny.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "tailwind",
-      },
-      {
-        title: "react-router-dom",
-      },
-      {
-        title: "react-fast-marquee",
-      },
-      {
-        title: "react-icons",
-      },
-      {
-        title: "react-lazyload",
-      },
-      {
-        title: "react-redux",
-      },
-      {
-        title: "redux-persist",
-      },
-      {
-        title: "react-toastify",
-      },
-      {
-        title: "swiper",
-      },
+      "react",
+      "tailwind",
+      "react-router-dom",
+      "react-fast-marquee",
+      "react-icons",
+      "react-lazyload",
+      "react-redux",
+      "redux-persist",
+      "react-toastify",
+      "swiper",
     ],
   },
   {
@@ -138,39 +97,17 @@ export const ProjectsDisplay = [
     img: image3,
     link: "https://order-project-lyart.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "tailwind",
-      },
-      {
-        title: "mantine-carousel",
-      },
-      {
-        title: "axios",
-      },
-      {
-        title: "daisyui",
-      },
-      {
-        title: "firebase",
-      },
-      {
-        title: "fontawesome-icon",
-      },
-      {
-        title: "framer-motion",
-      },
-      {
-        title: "react-dom",
-      },
-      {
-        title: "react-fast-marquee",
-      },
-      {
-        title: "react-hot-toast",
-      },
+      "react",
+      "tailwind",
+      "mantine-carousel",
+      "axios",
+      "daisyui",
+      "firebase",
+      "fontawesome-icon",
+      "framer-motion",
+      "react-dom",
+      "react-fast-marquee",
+      "react-hot-toast",
     ],
   },
   {
@@ -179,24 +116,12 @@ export const ProjectsDisplay = [
     img: image4,
     link: "https://auth-seven-dun.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "react-icons",
-      },
-      {
-        title: "react-owl-carousel",
-      },
-      {
-        title: "swiper",
-      },
-      {
-        title: "react-compare-image",
-      },
-      {
-        title: "web-vitals",
-      },
+      "react",
+      "react-icons",
+      "react-owl-carousel",
+      "swiper",
+      "react-compare-image",
+      "web-vitals",
     ],
   },
   {
@@ -205,24 +130,12 @@ export const ProjectsDisplay = [
     img: image1,
     link: "https://shopping-site-alpha.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "react-dom",
-      },
-      {
-        title: "react-icons",
-      },
-      {
-        title: "react-slick",
-      },
-      {
-        title: "slick-carousel",
-      },
-      {
-        title: "swiper",
-      },
+      "react",
+      "react-dom",
+      "react-icons",
+      "react-slick",
+      "slick-carousel",
+      "swiper",
     ],
   },
   {
@@ -231,24 +144,12 @@ export const ProjectsDisplay = [
     img: image2,
     link: "https://team-portfolio-seven.vercel.app/",
     language: [
-      {
-        title: "react",
-      },
-      {
-        title: "react-dom",
-      },
-      {
-        title: "react-icons",
-      },
-      {
-        title: "flowbite",
-      },
-      {
-        title: "react-typical",
-      },
-      {
-        title: "swiper",
-      },
+      "react",
+      "react-dom",
+      "react-icons",
+      "flowbite",
+      "react-typical",
+      "swiper",
     ],
   },
 ];
