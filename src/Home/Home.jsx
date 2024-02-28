@@ -50,9 +50,8 @@ const Home = ({ scrollToSection, setActiveSection }) => {
             <p className="sm:text-[25px] text-[15px]">
               I'm react based front end webveloper with
               <span className="main-text-color font-bold">
-                {" "}
-                over 2 year{" "}
-              </span>{" "}
+                over 2 year
+              </span>
               of experince
             </p>
           </div>

@@ -6,9 +6,16 @@ import image6 from "./img/companyPortfolio.png";
 import image7 from "./img/artist_portfolio.png";
 import image8 from "./img/Opaque_portfolio.png";
 import image9 from "./img/blue_ocean.png";
-
+import image10 from "./img/social.png";
 import image3 from "./img/shopping.png";
 export const ProjectsDisplay = [
+  {
+    id: 10,
+    title: "Opaque Portfolio",
+    img: image10,
+    link: "https://social-blogs.vercel.app/",
+    language: ["Describe detail in CV form"],
+  },
   {
     id: 7,
     title: "Opaque Portfolio",
