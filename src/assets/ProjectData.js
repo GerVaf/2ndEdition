@@ -11,7 +11,7 @@ import image3 from "./img/shopping.png";
 export const ProjectsDisplay = [
   {
     id: 10,
-    title: "Opaque Portfolio",
+    title: "Social Web App",
     img: image10,
     link: "https://social-blogs.vercel.app/",
     language: ["Describe detail in CV form"],
