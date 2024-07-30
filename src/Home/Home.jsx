@@ -81,7 +81,7 @@ const Home = ({ scrollToSection, setActiveSection }) => {
                     <div className=" w-full flex flex-col justify-center items-center text-sm p-1">
                       <h1 className="sm:text-lg text-xl">
                         {count && (
-                          <CountUp start={0} end={1} duration={5} delay={0.5} />
+                          <CountUp start={0} end={2} duration={5} delay={0.5} />
                         )}
                         +
                       </h1>
